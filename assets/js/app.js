@@ -20,7 +20,7 @@ form.addEventListener("submit", addItem);
 clearBtn.addEventListener("click", clearItems);
 
 //load items
-window.addEventListener("DomContentLoaded", setupItems);
+window.addEventListener("DOMContentLoaded", setupItems);
 
 //FUNCTIONS
 function addItem(e) {
@@ -119,7 +119,7 @@ function addToLocalStorage(id, value) {
   let items = getLocalStorage();
 
   items.push(grocery);
-  localStorage.setItem("list", JSON.stringify(items));
+  localStorage.setItem('list', JSON.stringify(items));
 }
 
 function removeFromLocalStorage(id) {
@@ -130,7 +130,7 @@ function removeFromLocalStorage(id) {
       return item;
     }
   });
-  localStorage.setItem("list", JSON.stringify(items));
+  localStorage.setItem('list', JSON.stringify(items));
 }
 
 function editLocalStorage(id, value) {
@@ -150,11 +150,7 @@ function getLocalStorage() {
     : [];
 }
 
-//localStorage API
-// setItem
-//getItem
-//removeItem
-//save as strongs
+
 
 // SETUP ITEMS
 function setupItems() {
